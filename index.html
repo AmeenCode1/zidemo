@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zi&rsquo;s Selection | Handpicked Jewelry — Studs, Rings, Brooches &amp; Turkish Rings</title>
+<meta name="description" content="Zi&rsquo;s Selection — handpicked studs, rings, brooches and Turkish-inspired jewelry, delivered nationwide across Pakistan. Order directly on WhatsApp.">
+<meta name="theme-color" content="#3A2A1D">
+<meta property="og:title" content="Zi&rsquo;s Selection | Jewelry That Completes Your Look">
+<meta property="og:description" content="Handpicked studs, rings, brooches and Turkish-inspired jewelry — order directly on WhatsApp.">
+<meta property="og:image" content="assets/hero-logo.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%8E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ============ DESIGN TOKENS ============ */
+  :root{
+    --ink:#3A2A1D;
+    --ink-2:#2A1D13;
+    --brown-soft:#6B5540;
+    --gold:#C6963F;
+    --gold-light:#E3B563;
+    --glow:#F3D28C;
+    --pine:#1F3D30;
+    --pine-light:#2C5642;
+    --stone:#CBBBA0;
+    --stone-soft:#EEE5D5;
+    --cream:#F8F3EA;
+    --paper:#FFFDF8;
+    --white:#FFFFFF;
+    --whatsapp:#25D366;
+    --whatsapp-dark:#1DA851;
+
+    --font-display:'Bodoni Moda', Georgia, serif;
+    --font-body:'Jost', -apple-system, sans-serif;
+
+    --container:1180px;
+    --radius-sm:8px;
+    --radius-md:14px;
+    --radius-lg:22px;
+    --header-h:82px;
+
+    --shadow-soft:0 12px 28px -18px rgba(42,29,19,0.35);
+    --shadow-lift:0 20px 40px -20px rgba(42,29,19,0.45);
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  section[id]{scroll-margin-top:calc(var(--header-h) + 10px);}
+  .container{max-width:var(--container);margin:0 auto;padding:0 24px;}
+
+  h1,h2,h3,h4{font-family:var(--font-display);color:var(--ink);margin:0;font-weight:600;letter-spacing:-0.01em;}
+
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--ink-2);padding:12px 20px;z-index:999;border-radius:0 0 8px 0;font-family:var(--font-body);font-weight:600;}
+  .skip-link:focus{left:0;}
+
+  :focus-visible{outline:2.5px solid var(--gold);outline-offset:3px;}
+
+  .eyebrow{
+    display:inline-block;
+    font-family:var(--font-body);
+    font-size:0.78rem;
+    font-weight:600;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:14px;
+  }
+  .eyebrow.on-dark{color:var(--gold-light);}
+
+  .section-head{max-width:640px;margin-bottom:56px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .section-head h2{font-size:clamp(1.9rem,1.4rem + 2.2vw,2.75rem);line-height:1.15;}
+  .section-head p{margin:18px 0 0;color:var(--brown-soft);font-size:1.05rem;max-width:540px;}
+  .section-head.center p{margin-left:auto;margin-right:auto;}
+
+  section{padding:88px 0;}
+
+  /* ============ BUTTONS ============ */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:15px 30px;border-radius:var(--radius-sm);
+    font-family:var(--font-body);font-weight:500;font-size:0.95rem;letter-spacing:0.01em;
+    border:1.5px solid transparent;cursor:pointer;text-decoration:none;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease, color .25s ease;
+    white-space:nowrap;
+  }
+  .btn svg{width:18px;height:18px;flex-shrink:0;}
+  .btn-primary{background:var(--gold);color:var(--ink-2);}
+  .btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:var(--shadow-soft);}
+  .btn-whatsapp{background:var(--whatsapp);color:#fff;}
+  .btn-whatsapp:hover{background:var(--whatsapp-dark);transform:translateY(-2px);box-shadow:var(--shadow-soft);}
+  .btn-outline-dark{border-color:var(--ink);color:var(--ink);background:transparent;}
+  .btn-outline-dark:hover{background:var(--ink);color:var(--cream);}
+  .btn-outline-light{border-color:var(--gold-light);color:var(--cream);background:transparent;}
+  .btn-outline-light:hover{background:var(--gold-light);color:var(--ink-2);}
+  .btn-block{width:100%;}
+  .btn-sm{padding:11px 20px;font-size:0.85rem;}
+
+  /* ============ HEADER ============ */
+  .site-header{
+    position:sticky;top:0;z-index:200;
+    height:var(--header-h);
+    display:flex;align-items:center;
+    background:rgba(248,243,234,0.88);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(58,42,29,0.08);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+  .logo{font-family:var(--font-display);font-size:1.5rem;font-weight:600;text-decoration:none;color:var(--ink);letter-spacing:0.01em;}
+  .logo em{font-style:italic;font-weight:500;color:var(--brown-soft);}
+  .nav-links{display:flex;gap:38px;list-style:none;margin:0;padding:0;}
+  .nav-links a{text-decoration:none;font-size:0.95rem;font-weight:500;color:var(--ink);position:relative;padding:4px 0;}
+  .nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--gold);transition:width .3s ease;}
+  .nav-links a:hover::after{width:100%;}
+  .nav-actions{display:flex;align-items:center;gap:14px;}
+  .icon-btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:44px;height:44px;border-radius:50%;
+    background:var(--whatsapp);color:#fff;flex-shrink:0;
+    transition:transform .25s ease, background .25s ease;
+  }
+  .icon-btn:hover{background:var(--whatsapp-dark);transform:scale(1.06);}
+  .icon-btn svg{width:22px;height:22px;}
+  .nav-toggle{
+    display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--ink);
+  }
+  .nav-toggle svg{width:26px;height:26px;}
+
+  /* ============ HERO ============ */
+  .hero{padding:56px 0 0;overflow:hidden;}
+  .hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;}
+  .hero-copy p.lede{font-size:1.12rem;color:var(--brown-soft);margin:22px 0 34px;max-width:460px;}
+  .hero h1{font-size:clamp(2.5rem,1.8rem + 3vw,4.1rem);line-height:1.08;}
+  .hero h1 em{font-style:italic;color:var(--gold);}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:20px;}
+  .hero-note{font-size:0.86rem;color:var(--brown-soft);letter-spacing:0.02em;}
+  .hero-note svg{width:14px;height:14px;vertical-align:-2px;margin-right:6px;color:var(--gold);}
+
+  .hero-visual{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:2/3;box-shadow:var(--shadow-lift);}
+  .hero-visual img{width:100%;height:100%;object-fit:cover;object-position:top center;filter:brightness(0.9) saturate(1.05);animation:heroLightUp 1.6s ease forwards;}
+  .hero-visual::after{
+    content:'';position:absolute;inset:0;border-radius:var(--radius-lg);
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08);
+    background:radial-gradient(ellipse at 50% 35%, rgba(243,210,140,0.28), transparent 60%);
+    animation:glowPulse 1.8s ease forwards;
+  }
+  @keyframes heroLightUp{from{filter:brightness(0.55) saturate(0.7);}to{filter:brightness(1) saturate(1.05);}}
+  @keyframes glowPulse{0%{opacity:0;}55%{opacity:1;}100%{opacity:0.55;}}
+
+  /* ============ TRUST STRIP ============ */
+  .trust-strip{background:var(--ink-2);padding:30px 0;}
+  .trust-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;}
+  .trust-item{display:flex;align-items:center;gap:10px;color:var(--stone-soft);font-size:0.9rem;font-weight:500;flex:1 1 200px;}
+  .trust-item svg{width:20px;height:20px;color:var(--gold-light);flex-shrink:0;}
+
+  /* ============ SIGNATURE SHELF TILE ============ */
+  .shelf-tile{
+    position:relative;background:var(--paper);border-radius:var(--radius-md);
+    padding:38px 26px 30px;text-align:center;
+    box-shadow:0 1px 0 rgba(58,42,29,0.05), var(--shadow-soft);
+    transition:transform .35s ease, box-shadow .35s ease;
+  }
+  .shelf-tile::before{
+    content:'';position:absolute;top:6px;left:50%;transform:translateX(-50%);
+    width:64%;height:46px;border-radius:50%;
+    background:radial-gradient(ellipse, var(--glow) 0%, transparent 72%);
+    opacity:0.42;filter:blur(6px);
+    transition:opacity .4s ease, filter .4s ease;
+    pointer-events:none;
+  }
+  .shelf-tile:hover{transform:translateY(-6px);box-shadow:var(--shadow-lift);}
+  .shelf-tile:hover::before{opacity:0.85;filter:blur(10px);}
+  .shelf-icon{position:relative;width:56px;height:56px;margin:0 auto 18px;color:var(--gold);}
+  .shelf-icon svg{width:100%;height:100%;}
+
+  /* ============ FEATURED COLLECTION ============ */
+  .featured-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;}
+  .featured-grid .shelf-tile p{color:var(--brown-soft);font-size:0.92rem;margin:0 0 18px;min-height:44px;}
+  .featured-grid h3{font-size:1.25rem;margin-bottom:8px;}
+  .tile-link{display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--gold);padding-bottom:2px;}
+  .tile-link svg{width:14px;height:14px;transition:transform .25s ease;}
+  .tile-link:hover svg{transform:translateX(4px);}
+
+  /* ============ SHOP ============ */
+  .shop{background:var(--paper);}
+  .filter-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px;}
+  .filter-tab{
+    padding:10px 22px;border-radius:999px;border:1.5px solid var(--stone);
+    background:transparent;color:var(--ink);font-family:var(--font-body);font-size:0.88rem;font-weight:500;
+    cursor:pointer;transition:all .25s ease;
+  }
+  .filter-tab:hover{border-color:var(--gold);}
+  .filter-tab.active{background:var(--ink);border-color:var(--ink);color:var(--cream);}
+
+  .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:26px;}
+  .product-card{
+    position:relative;background:var(--paper);border:1px solid rgba(58,42,29,0.08);border-radius:var(--radius-md);
+    padding:0 0 24px;overflow:visible;
+    box-shadow:0 1px 0 rgba(58,42,29,0.04);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-soft);}
+  .product-shelf{
+    position:relative;background:linear-gradient(180deg, var(--stone-soft), var(--cream));
+    border-radius:var(--radius-md) var(--radius-md) 0 0;
+    height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .product-shelf::before{
+    content:'';position:absolute;top:14px;left:50%;transform:translateX(-50%);
+    width:60%;height:40px;border-radius:50%;
+    background:radial-gradient(ellipse, var(--glow) 0%, transparent 70%);
+    opacity:0.5;filter:blur(6px);
+    transition:opacity .4s ease;
+  }
+  .product-card:hover .product-shelf::before{opacity:0.9;}
+  .product-shelf svg{position:relative;width:64px;height:64px;color:var(--ink);}
+  .badge{
+    position:absolute;top:12px;left:12px;z-index:2;
+    font-size:0.68rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;
+    padding:5px 11px;border-radius:999px;color:#fff;
+  }
+  .badge.bestseller{background:var(--gold);color:var(--ink-2);}
+  .badge.new{background:var(--pine);color:var(--stone-soft);}
+  .product-body{padding:20px 22px 0;}
+  .product-cat{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--brown-soft);}
+  .product-body h3{font-size:1.12rem;margin:6px 0 6px;line-height:1.3;}
+  .product-desc{font-size:0.87rem;color:var(--brown-soft);margin:0 0 14px;min-height:40px;}
+  .product-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+  .product-no{font-size:0.78rem;color:var(--stone);letter-spacing:0.03em;}
+  .product-price{font-family:var(--font-display);font-size:1.2rem;font-weight:600;color:var(--ink);}
+
+  /* ============ BESTSELLERS / NEW (tinted band) ============ */
+  .tinted-band{background:var(--stone-soft);}
+
+  /* ============ WHY US (dark) ============ */
+  .why-us{
+    background:var(--ink-2);color:var(--stone-soft);position:relative;overflow:hidden;
+  }
+  .why-us .section-head h2,.why-us .section-head p{color:var(--stone-soft);}
+  .why-us .section-head p{opacity:0.85;}
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;position:relative;z-index:1;}
+  .why-item{text-align:left;}
+  .why-item svg{width:34px;height:34px;color:var(--gold-light);margin-bottom:16px;}
+  .why-item h4{font-size:1.08rem;color:var(--stone-soft);margin-bottom:8px;font-weight:600;}
+  .why-item p{font-size:0.9rem;color:rgba(238,229,213,0.72);margin:0;}
+
+  /* ============ REVIEWS ============ */
+  .review-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:26px;}
+  .review-card{background:var(--paper);border-radius:var(--radius-md);padding:30px 26px;box-shadow:var(--shadow-soft);position:relative;}
+  .review-stars{display:flex;gap:3px;color:var(--gold);margin-bottom:14px;}
+  .review-stars svg{width:16px;height:16px;}
+  .review-quote{font-size:0.95rem;color:var(--ink);margin:0 0 18px;font-style:italic;}
+  .review-name{font-size:0.85rem;font-weight:600;color:var(--brown-soft);}
+
+  /* ============ ABOUT ============ */
+  .about{background:var(--stone-soft);}
+  .about-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:center;}
+  .about-copy p{color:var(--brown-soft);font-size:1.02rem;margin:0 0 18px;}
+  .about-pull{
+    background:var(--paper);border-radius:var(--radius-lg);padding:44px 34px;
+    box-shadow:var(--shadow-soft);position:relative;
+  }
+  .about-pull .quote-mark{font-family:var(--font-display);font-size:4rem;color:var(--gold);line-height:1;display:block;margin-bottom:6px;}
+  .about-pull p{font-family:var(--font-display);font-style:italic;font-size:1.35rem;line-height:1.4;color:var(--ink);margin:0;}
+
+  /* ============ CONTACT CTA ============ */
+  .contact-cta{background:linear-gradient(135deg, var(--pine), var(--pine-light));color:var(--cream);text-align:center;}
+  .contact-cta .eyebrow{color:var(--gold-light);}
+  .contact-cta h2{color:var(--cream);font-size:clamp(2rem,1.5rem + 2vw,2.9rem);}
+  .contact-cta p.lede{max-width:480px;margin:20px auto 36px;color:rgba(248,243,234,0.85);font-size:1.05rem;}
+  .contact-actions{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-bottom:26px;}
+  .btn-ink{background:var(--ink-2);color:var(--cream);}
+  .btn-ink:hover{background:var(--ink);transform:translateY(-2px);box-shadow:var(--shadow-soft);}
+  .contact-details{font-size:0.92rem;color:rgba(248,243,234,0.75);}
+  .contact-details a{text-decoration:underline;text-underline-offset:3px;}
+
+  /* ============ FOOTER ============ */
+  .site-footer{background:var(--ink-2);color:var(--stone-soft);padding:72px 0 0;position:relative;overflow:hidden;}
+  .site-footer::before{
+    content:'';position:absolute;inset:0;opacity:0.05;pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'%3E%3Cg fill='none' stroke='%23C6963F' stroke-width='1'%3E%3Cpath d='M42 4 L58 22 L42 40 L26 22 Z'/%3E%3Cpath d='M42 44 L58 62 L42 80 L26 62 Z'/%3E%3Ccircle cx='42' cy='42' r='6'/%3E%3C/g%3E%3C/svg%3E");
+    background-size:84px 84px;
+  }
+  .footer-grid{position:relative;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(238,229,213,0.12);}
+  .footer-brand .logo{color:var(--stone-soft);}
+  .footer-brand .logo em{color:var(--gold-light);}
+  .footer-tagline{font-size:0.92rem;color:rgba(238,229,213,0.7);margin:14px 0 22px;max-width:260px;}
+  .social-row{display:flex;gap:12px;}
+  .social-row a{
+    width:38px;height:38px;border-radius:50%;border:1px solid rgba(238,229,213,0.25);
+    display:flex;align-items:center;justify-content:center;color:var(--stone-soft);
+    transition:background .25s ease, border-color .25s ease;
+  }
+  .social-row a:hover{background:var(--gold);border-color:var(--gold);color:var(--ink-2);}
+  .social-row svg{width:17px;height:17px;}
+  .footer-col h5{font-family:var(--font-body);font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-light);margin:0 0 18px;font-weight:600;}
+  .footer-col ul{list-style:none;margin:0;padding:0;}
+  .footer-col li{margin-bottom:12px;}
+  .footer-col a,.footer-col button{
+    background:none;border:none;padding:0;cursor:pointer;font-family:var(--font-body);
+    color:rgba(238,229,213,0.78);text-decoration:none;font-size:0.92rem;text-align:left;
+    transition:color .2s ease;
+  }
+  .footer-col a:hover,.footer-col button:hover{color:var(--gold-light);}
+  .footer-bottom{position:relative;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:26px 0;font-size:0.82rem;color:rgba(238,229,213,0.55);}
+
+  /* ============ MODALS ============ */
+  .modal-overlay{
+    position:fixed;inset:0;background:rgba(42,29,19,0.55);backdrop-filter:blur(3px);
+    display:flex;align-items:center;justify-content:center;padding:24px;z-index:500;
+    opacity:0;pointer-events:none;transition:opacity .25s ease;
+  }
+  .modal-overlay.open{opacity:1;pointer-events:auto;}
+  .modal-box{
+    background:var(--paper);border-radius:var(--radius-lg);max-width:560px;width:100%;
+    max-height:82vh;overflow-y:auto;padding:40px 38px;position:relative;
+    transform:translateY(16px);transition:transform .25s ease;
+  }
+  .modal-overlay.open .modal-box{transform:translateY(0);}
+  .modal-close{position:absolute;top:20px;right:20px;background:none;border:none;cursor:pointer;color:var(--brown-soft);padding:6px;}
+  .modal-close svg{width:22px;height:22px;}
+  .modal-box h3{font-size:1.5rem;margin-bottom:6px;}
+  .modal-sample{font-size:0.82rem;font-style:italic;color:var(--brown-soft);margin:0 0 22px;}
+  .modal-box ul{padding-left:20px;margin:0;color:var(--ink);font-size:0.95rem;}
+  .modal-box li{margin-bottom:12px;}
+
+  /* ============ SCROLL REVEAL ============ */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in-view{opacity:1;transform:translateY(0);}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;scroll-behavior:auto !important;}
+    .reveal{opacity:1;transform:none;}
+  }
+
+  /* ============ WHATSAPP FLOAT ============ */
+  .wa-float{
+    position:fixed;bottom:24px;right:24px;z-index:150;
+    width:58px;height:58px;border-radius:50%;background:var(--whatsapp);color:#fff;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -8px rgba(29,168,81,0.55);
+    transition:transform .25s ease;
+  }
+  .wa-float:hover{transform:scale(1.08);}
+  .wa-float svg{width:28px;height:28px;}
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width:980px){
+    .featured-grid{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:1fr 1fr;row-gap:36px;}
+    .about-grid{grid-template-columns:1fr;}
+    .about-pull{order:-1;}
+  }
+  @media (max-width:860px){
+    .nav-links{
+      position:fixed;top:var(--header-h);left:0;right:0;background:var(--cream);
+      flex-direction:column;gap:0;padding:10px 24px 26px;
+      border-bottom:1px solid rgba(58,42,29,0.1);
+      transform:translateY(-12px);opacity:0;pointer-events:none;transition:all .25s ease;
+    }
+    .nav-links.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+    .nav-links a{padding:13px 0;border-bottom:1px solid rgba(58,42,29,0.06);width:100%;}
+    .nav-toggle{display:block;}
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-visual{aspect-ratio:4/3;order:-1;}
+    section{padding:64px 0;}
+  }
+  @media (max-width:640px){
+    .featured-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;gap:32px;}
+    .trust-inner{flex-direction:column;}
+    .hero-actions .btn{flex:1 1 auto;}
+    .contact-actions .btn{width:100%;}
+  }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ ICON LIBRARY ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+  <symbol id="icon-stud" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="23" r="13"/><path d="M24 20 L32 24 L40 20"/><line x1="32" y1="36" x2="32" y2="49"/><circle cx="32" cy="53" r="3"/>
+  </symbol>
+  <symbol id="icon-ring" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="40" r="15"/><path d="M23 21 L32 7 L41 21 Z"/><path d="M28 18 L32 12 M36 18 L32 12"/>
+  </symbol>
+  <symbol id="icon-brooch" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="30" cy="33" rx="17" ry="21"/><path d="M19 27 Q30 15 41 27"/><circle cx="30" cy="21" r="2.2" fill="currentColor" stroke="none"/><circle cx="23" cy="31" r="1.8" fill="currentColor" stroke="none"/><circle cx="37" cy="31" r="1.8" fill="currentColor" stroke="none"/><line x1="43" y1="20" x2="52" y2="11"/>
+  </symbol>
+  <symbol id="icon-turkish" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="41" r="14"/><circle cx="32" cy="19" r="10"/><circle cx="32" cy="19" r="4.5"/><circle cx="17" cy="27" r="2" fill="currentColor" stroke="none"/><circle cx="47" cy="27" r="2" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.2 7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3c1.5.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.1c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.9.9-3.2-.2-.3C3.8 14.6 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></symbol>
+  <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="icon-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="11"/><path d="M15 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="17.5" cy="19" r="2"/></symbol>
+  <symbol id="icon-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M18 6l-2.5 2.5M8.5 15.5L6 18"/></symbol>
+  <symbol id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.4 8.4 0 01-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.4 8.4 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></symbol>
+  <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 00-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 000-7.8z"/></symbol>
+  <symbol id="icon-check-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></symbol>
+  <symbol id="icon-facebook" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v2H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z"/></symbol>
+  <symbol id="icon-tiktok" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v14a2.7 2.7 0 11-2.7-2.7c.2 0 .5 0 .7.1v-3.1a5.8 5.8 0 00-.7 0A5.8 5.8 0 108.5 16V9.2a8.6 8.6 0 004.9 1.6V7.7A5.1 5.1 0 0116.5 5V2z"/></symbol>
+</defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">Zi&rsquo;s <em>Selection</em></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#top">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-btn" id="navWaBtn" href="#" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener">
+        <svg><use href="#icon-whatsapp"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg><use href="#icon-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Handpicked Jewelry &middot; Pakistan</span>
+        <h1>Jewelry That<br>Completes Your <em>Look.</em></h1>
+        <p class="lede">Studs, rings, brooches and Turkish-inspired pieces, hand-picked in small batches and delivered anywhere in Pakistan.</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop the Collection</a>
+          <a href="#" id="heroWaBtn" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <svg><use href="#icon-whatsapp"/></svg> Order on WhatsApp
+          </a>
+        </div>
+        <p class="hero-note"><svg><use href="#icon-truck"/></svg>Nationwide delivery &middot; Order confirmed on WhatsApp</p>
+      </div>
+      <div class="hero-visual reveal">
+        <img src="hero-logo.jpg" alt="Zi&rsquo;s Selection illuminated logo and jewelry display in a boutique setting">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip" style="padding:30px 0;">
+    <div class="container trust-inner">
+      <div class="trust-item"><svg><use href="#icon-truck"/></svg>Nationwide Delivery</div>
+      <div class="trust-item"><svg><use href="#icon-sparkle"/></svg>Handpicked Designs</div>
+      <div class="trust-item"><svg><use href="#icon-chat"/></svg>Easy WhatsApp Ordering</div>
+      <div class="trust-item"><svg><use href="#icon-heart"/></svg>Loved by 500+ Customers</div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED COLLECTION ============ -->
+  <section class="featured" id="collection">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">The Collection</span>
+        <h2>Four Ways to Shine</h2>
+      </div>
+      <div class="featured-grid reveal">
+        <div class="shelf-tile">
+          <div class="shelf-icon"><svg><use href="#icon-stud"/></svg></div>
+          <h3>Studs</h3>
+          <p>Everyday elegance for your ears.</p>
+          <button class="tile-link" data-filter-link="studs">Explore <svg><use href="#icon-arrow"/></svg></button>
+        </div>
+        <div class="shelf-tile">
+          <div class="shelf-icon"><svg><use href="#icon-ring"/></svg></div>
+          <h3>Rings</h3>
+          <p>Statement and stackable styles.</p>
+          <button class="tile-link" data-filter-link="rings">Explore <svg><use href="#icon-arrow"/></svg></button>
+        </div>
+        <div class="shelf-tile">
+          <div class="shelf-icon"><svg><use href="#icon-brooch"/></svg></div>
+          <h3>Brooches</h3>
+          <p>Vintage-inspired finishing touches.</p>
+          <button class="tile-link" data-filter-link="brooches">Explore <svg><use href="#icon-arrow"/></svg></button>
+        </div>
+        <div class="shelf-tile">
+          <div class="shelf-icon"><svg><use href="#icon-turkish"/></svg></div>
+          <h3>Turkish Rings</h3>
+          <p>Ornate designs inspired by Ottoman artistry.</p>
+          <button class="tile-link" data-filter-link="turkish">Explore <svg><use href="#icon-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHOP ============ -->
+  <section class="shop" id="shop">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Full Catalogue</span>
+        <h2>Shop All Pieces</h2>
+        <p>Demo catalogue &mdash; swap in real photos, names and prices whenever you&rsquo;re ready.</p>
+      </div>
+      <div class="filter-tabs reveal" id="filterTabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="studs">Studs</button>
+        <button class="filter-tab" data-filter="rings">Rings</button>
+        <button class="filter-tab" data-filter="brooches">Brooches</button>
+        <button class="filter-tab" data-filter="turkish">Turkish Rings</button>
+      </div>
+      <div class="product-grid reveal" id="shopGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ BEST SELLERS ============ -->
+  <section class="tinted-band" id="bestsellers">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Customer Favourites</span>
+        <h2>Best Sellers</h2>
+      </div>
+      <div class="product-grid reveal" id="bestsellersGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ NEW ARRIVALS ============ -->
+  <section id="newarrivals">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Just In</span>
+        <h2>New Arrivals</h2>
+      </div>
+      <div class="product-grid reveal" id="newArrivalsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="why-us">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow on-dark">Why Shop With Us</span>
+        <h2>Made Easy, Made Beautiful</h2>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-item"><svg><use href="#icon-sparkle"/></svg><h4>Handpicked Designs</h4><p>Every piece is chosen by hand for its versatility and finish, not mass-ordered by the crate.</p></div>
+        <div class="why-item"><svg><use href="#icon-check-shield"/></svg><h4>Premium Finish</h4><p>Quality materials and careful plating, so your pieces keep their shine long after checkout.</p></div>
+        <div class="why-item"><svg><use href="#icon-chat"/></svg><h4>Easy WhatsApp Ordering</h4><p>No account, no cart, no waiting. Message us and your order is confirmed in minutes.</p></div>
+        <div class="why-item"><svg><use href="#icon-truck"/></svg><h4>Nationwide Delivery</h4><p>From Karachi to Gilgit, we pack and ship your order straight to your door.</p></div>
+        <div class="why-item"><svg><use href="#icon-heart"/></svg><h4>Loved by Customers</h4><p>Hundreds of repeat customers trust Zi&rsquo;s Selection for gifts and everyday elegance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">From Our Customers</span>
+        <h2>Loved, Worn, Repeated</h2>
+      </div>
+      <div class="review-grid reveal">
+        <div class="review-card">
+          <div class="review-stars"><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg></div>
+          <p class="review-quote">&ldquo;The Turkish ring I ordered looks even more stunning in person. Packaging was lovely and delivery only took four days.&rdquo;</p>
+          <p class="review-name">Ayesha K.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars"><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg></div>
+          <p class="review-quote">&ldquo;My go-to for gifts now. The pearl studs I bought for my sister&rsquo;s birthday were an instant hit.&rdquo;</p>
+          <p class="review-name">Sana M.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars"><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg></div>
+          <p class="review-quote">&ldquo;Ordering on WhatsApp was so simple &mdash; no app, no account, just a message and it was sorted.&rdquo;</p>
+          <p class="review-name">Fatima R.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars"><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg><svg><use href="#icon-star"/></svg></div>
+          <p class="review-quote">&ldquo;The brooch is beautifully detailed and the gold finish hasn&rsquo;t faded after weeks of wear.&rdquo;</p>
+          <p class="review-name">Mahnoor A.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2 style="margin-bottom:22px;">About Zi&rsquo;s Selection</h2>
+        <p>Zi&rsquo;s Selection started with a simple idea: beautiful jewelry shouldn&rsquo;t be complicated to find or complicated to buy. We hand-pick every stud, ring, brooch and Turkish-inspired piece in our collection for the same quality and finish we&rsquo;d want to wear ourselves.</p>
+        <p>No storefront, no long checkout, no guesswork &mdash; just a small, considered collection, one message away on WhatsApp. Whether you&rsquo;re dressing up for wedding season or adding a finishing touch to an everyday outfit, we&rsquo;re here to help you find the piece that completes your look.</p>
+      </div>
+      <div class="about-pull reveal">
+        <span class="quote-mark">&ldquo;</span>
+        <p>Small collection. Considered pieces. One message away.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT CTA ============ -->
+  <section class="contact-cta" id="contact">
+    <div class="container reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Ready to Find Your Piece?</h2>
+      <p class="lede">Message us on WhatsApp for the fastest response, or drop us an email &mdash; we&rsquo;re happy to help you pick the right piece.</p>
+      <div class="contact-actions">
+        <a href="#" id="ctaWaBtn" class="btn btn-whatsapp" target="_blank" rel="noopener"><svg><use href="#icon-whatsapp"/></svg> Order on WhatsApp</a>
+        <a href="#" id="ctaMailBtn" class="btn btn-ink"><svg><use href="#icon-mail"/></svg> Email Us</a>
+      </div>
+      <p class="contact-details">0318 6708684 &middot; <a href="mailto:jhina1868@gmail.com">jhina1868@gmail.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo">Zi&rsquo;s <em>Selection</em></a>
+      <p class="footer-tagline">Jewelry that completes your look.</p>
+      <div class="social-row">
+        <a href="#" title="Add your Instagram link here" aria-label="Instagram"><svg><use href="#icon-instagram"/></svg></a>
+        <a href="#" title="Add your Facebook link here" aria-label="Facebook"><svg><use href="#icon-facebook"/></svg></a>
+        <a href="#" title="Add your TikTok link here" aria-label="TikTok"><svg><use href="#icon-tiktok"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Policies</h5>
+      <ul>
+        <li><button data-modal="modal-shipping">Shipping Policy</button></li>
+        <li><button data-modal="modal-returns">Exchange &amp; Returns</button></li>
+        <li><button data-modal="modal-privacy">Privacy Policy</button></li>
+        <li><button data-modal="modal-terms">Terms &amp; Conditions</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="#" id="footerWaLink" target="_blank" rel="noopener">WhatsApp: 0318 6708684</a></li>
+        <li><a href="mailto:jhina1868@gmail.com">jhina1868@gmail.com</a></li>
+        <li style="color:rgba(238,229,213,0.6);">Rawalpindi, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; <span id="year"></span> Zi&rsquo;s Selection. All rights reserved.</span>
+    <span>Demo site &mdash; content and photos to be finalised.</span>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOAT ============ -->
+<a href="#" id="floatWaBtn" class="wa-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg><use href="#icon-whatsapp"/></svg>
+</a>
+
+<!-- ============ POLICY MODALS ============ -->
+<div class="modal-overlay" id="modal-shipping" role="dialog" aria-modal="true" aria-labelledby="modal-shipping-title">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal aria-label="Close"><svg><use href="#icon-close"/></svg></button>
+    <h3 id="modal-shipping-title">Shipping Policy</h3>
+    <p class="modal-sample">Sample policy &mdash; replace with your official wording.</p>
+    <ul>
+      <li>Orders are processed within 1&ndash;2 business days of confirmation on WhatsApp.</li>
+      <li>Delivery across Pakistan typically takes 3&ndash;5 business days in major cities and 5&ndash;7 business days elsewhere.</li>
+      <li>A flat delivery charge of PKR 200 applies; orders above PKR 3,000 ship free.</li>
+      <li>You&rsquo;ll receive tracking details once your order is dispatched.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-returns" role="dialog" aria-modal="true" aria-labelledby="modal-returns-title">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal aria-label="Close"><svg><use href="#icon-close"/></svg></button>
+    <h3 id="modal-returns-title">Exchange &amp; Returns Policy</h3>
+    <p class="modal-sample">Sample policy &mdash; replace with your official wording.</p>
+    <ul>
+      <li>Exchanges are accepted within 3 days of delivery for unused, unworn items in original packaging.</li>
+      <li>For hygiene reasons, earrings cannot be returned or exchanged unless defective.</li>
+      <li>Damaged or incorrect items are replaced free of charge &mdash; message us with a photo on WhatsApp.</li>
+      <li>Refunds aren&rsquo;t offered; exchanges or store credit are provided instead.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="modal-privacy-title">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal aria-label="Close"><svg><use href="#icon-close"/></svg></button>
+    <h3 id="modal-privacy-title">Privacy Policy</h3>
+    <p class="modal-sample">Sample policy &mdash; replace with your official wording.</p>
+    <ul>
+      <li>We collect only what&rsquo;s needed to fulfil your order: your name, phone number and delivery address.</li>
+      <li>Your information is never sold or shared, except with the courier delivering your order.</li>
+      <li>We don&rsquo;t store payment details on this website.</li>
+      <li>Message us anytime if you&rsquo;d like your information removed.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-terms" role="dialog" aria-modal="true" aria-labelledby="modal-terms-title">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal aria-label="Close"><svg><use href="#icon-close"/></svg></button>
+    <h3 id="modal-terms-title">Terms &amp; Conditions</h3>
+    <p class="modal-sample">Sample policy &mdash; replace with your official wording.</p>
+    <ul>
+      <li>All prices are listed in PKR and may change without prior notice.</li>
+      <li>Colours and finishes may appear slightly different in person due to screen and lighting differences.</li>
+      <li>Orders are confirmed only once details are verified over WhatsApp.</li>
+      <li>All designs, photography and content belong to Zi&rsquo;s Selection and may not be reused without permission.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ============ CONFIG ============ */
+  var WHATSAPP_NUMBER = "923186708684"; // 0318 6708684 in international format
+  var EMAIL = "jhina1868@gmail.com";
+
+  /* ============ PRODUCT DATA ============ */
+  /* Edit this array to replace demo products with real ones. */
+  var products = [
+    {id:1,name:"Pearl Drop Studs",no:"ZS-101",price:"PKR 1,499",category:"studs",catLabel:"Studs",icon:"icon-stud",tag:"bestseller",desc:"Freshwater pearl drops on a delicate gold-toned post."},
+    {id:2,name:"Crystal Solitaire Studs",no:"ZS-102",price:"PKR 1,299",category:"studs",catLabel:"Studs",icon:"icon-stud",tag:"new",desc:"Everyday sparkle with a classic round-cut crystal."},
+    {id:3,name:"Gold Dot Studs",no:"ZS-103",price:"PKR 899",category:"studs",catLabel:"Studs",icon:"icon-stud",tag:"",desc:"Minimal polished dots for effortless, everyday wear."},
+    {id:4,name:"Classic Gold Band Ring",no:"ZS-201",price:"PKR 1,799",category:"rings",catLabel:"Rings",icon:"icon-ring",tag:"bestseller",desc:"A timeless gold-plated band that pairs with everything."},
+    {id:5,name:"Stone Halo Ring",no:"ZS-202",price:"PKR 2,199",category:"rings",catLabel:"Rings",icon:"icon-ring",tag:"new",desc:"A centre stone framed by a delicate halo setting."},
+    {id:6,name:"Minimalist Stacking Ring Set",no:"ZS-203",price:"PKR 1,599",category:"rings",catLabel:"Rings",icon:"icon-ring",tag:"",desc:"Three slim bands to mix, match and stack your way."},
+    {id:7,name:"Vintage Rose Brooch",no:"ZS-301",price:"PKR 2,499",category:"brooches",catLabel:"Brooches",icon:"icon-brooch",tag:"bestseller",desc:"A hand-finished rose motif for shawls, coats and bags."},
+    {id:8,name:"Pearl Cluster Brooch",no:"ZS-302",price:"PKR 2,299",category:"brooches",catLabel:"Brooches",icon:"icon-brooch",tag:"new",desc:"Clustered pearls in a refined vintage-inspired setting."},
+    {id:9,name:"Turkish Evil Eye Ring",no:"ZS-401",price:"PKR 1,899",category:"turkish",catLabel:"Turkish Rings",icon:"icon-turkish",tag:"bestseller",desc:"Hand-set evil eye motif in a statement gold band."},
+    {id:10,name:"Ottoman Motif Statement Ring",no:"ZS-402",price:"PKR 2,599",category:"turkish",catLabel:"Turkish Rings",icon:"icon-turkish",tag:"new",desc:"Bold Ottoman-inspired engraving with a domed centre stone."},
+    {id:11,name:"Turkish Filigree Ring",no:"ZS-403",price:"PKR 2,099",category:"turkish",catLabel:"Turkish Rings",icon:"icon-turkish",tag:"",desc:"Delicate filigree work inspired by traditional Turkish artistry."}
+  ];
+
+  function waLink(message){
+    return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+  }
+
+  function productWaLink(p){
+    var msg = "Assalamualaikum, I'm interested in ordering:\nProduct: " + p.name +
+      "\nProduct No: " + p.no + "\nPrice: " + p.price +
+      "\nPlease confirm availability and delivery details.";
+    return waLink(msg);
+  }
+
+  function genericWaLink(){
+    return waLink("Assalamualaikum, I'm interested in your jewelry collection. Could you please share more details?");
+  }
+
+  /* ============ RENDER PRODUCT CARD ============ */
+  function cardHTML(p){
+    var badge = p.tag === "bestseller" ? '<span class="badge bestseller">Bestseller</span>'
+              : p.tag === "new" ? '<span class="badge new">New</span>' : '';
+    return (
+      '<div class="product-card" data-category="' + p.category + '">' +
+        badge +
+        '<div class="product-shelf"><svg><use href="#' + p.icon + '"/></svg></div>' +
+        '<div class="product-body">' +
+          '<span class="product-cat">' + p.catLabel + '</span>' +
+          '<h3>' + p.name + '</h3>' +
+          '<p class="product-desc">' + p.desc + '</p>' +
+          '<div class="product-meta"><span class="product-no">' + p.no + '</span><span class="product-price">' + p.price + '</span></div>' +
+          '<a class="btn btn-whatsapp btn-sm btn-block" href="' + productWaLink(p) + '" target="_blank" rel="noopener"><svg><use href="#icon-whatsapp"/></svg> Order Now</a>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function renderGrid(el, list){
+    el.innerHTML = list.map(cardHTML).join("");
+  }
+
+  var shopGrid = document.getElementById("shopGrid");
+  var bestsellersGrid = document.getElementById("bestsellersGrid");
+  var newArrivalsGrid = document.getElementById("newArrivalsGrid");
+
+  renderGrid(shopGrid, products);
+  renderGrid(bestsellersGrid, products.filter(function(p){return p.tag === "bestseller";}));
+  renderGrid(newArrivalsGrid, products.filter(function(p){return p.tag === "new";}));
+
+  /* ============ FILTER TABS ============ */
+  var filterTabs = document.querySelectorAll(".filter-tab");
+  function applyFilter(filter){
+    filterTabs.forEach(function(t){
+      var active = t.getAttribute("data-filter") === filter;
+      t.classList.toggle("active", active);
+    });
+    renderGrid(shopGrid, filter === "all" ? products : products.filter(function(p){return p.category === filter;}));
+  }
+  filterTabs.forEach(function(tab){
+    tab.addEventListener("click", function(){ applyFilter(tab.getAttribute("data-filter")); });
+  });
+  document.querySelectorAll("[data-filter-link]").forEach(function(link){
+    link.addEventListener("click", function(){
+      applyFilter(link.getAttribute("data-filter-link"));
+      document.getElementById("shop").scrollIntoView({behavior:"smooth"});
+    });
+  });
+
+  /* ============ WHATSAPP / EMAIL LINKS ============ */
+  var genericLink = genericWaLink();
+  ["navWaBtn","heroWaBtn","ctaWaBtn","floatWaBtn","footerWaLink"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.href = genericLink;
+  });
+  var mailBtn = document.getElementById("ctaMailBtn");
+  if(mailBtn){
+    mailBtn.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Inquiry from Website") +
+      "&body=" + encodeURIComponent("Assalamualaikum, I'd like to know more about your jewelry collection.");
+  }
+
+  /* ============ MOBILE NAV ============ */
+  var navToggle = document.getElementById("navToggle");
+  var navLinks = document.getElementById("navLinks");
+  navToggle.addEventListener("click", function(){
+    var open = navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  navLinks.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click", function(){
+      navLinks.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  /* ============ MODALS ============ */
+  document.querySelectorAll("[data-modal]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var modal = document.getElementById(btn.getAttribute("data-modal"));
+      if(modal) modal.classList.add("open");
+    });
+  });
+  document.querySelectorAll(".modal-overlay").forEach(function(overlay){
+    overlay.addEventListener("click", function(e){
+      if(e.target === overlay) overlay.classList.remove("open");
+    });
+    overlay.querySelectorAll("[data-close-modal]").forEach(function(btn){
+      btn.addEventListener("click", function(){ overlay.classList.remove("open"); });
+    });
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){
+      document.querySelectorAll(".modal-overlay.open").forEach(function(m){ m.classList.remove("open"); });
+    }
+  });
+
+  /* ============ SCROLL REVEAL ============ */
+  var revealEls = document.querySelectorAll(".reveal");
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add("in-view");
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.12});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add("in-view"); });
+  }
+
+  /* ============ FOOTER YEAR ============ */
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+})();
+</script>
+</body>
+</html>
